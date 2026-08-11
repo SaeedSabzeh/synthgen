@@ -1,0 +1,14 @@
+{
+  "name": "Product",
+  "dedup_keys": ["sku"],
+  "fields": {
+    "sku":         {"type": "string",  "description": "8-character alphanumeric stock code"},
+    "name":        {"type": "string",  "description": "consumer-facing product name"},
+    "category":    {"type": "string",  "enum": ["kitchen", "outdoor", "office", "audio", "fitness"]},
+    "price_eur":   {"type": "number",  "gt": 0.99, "lt": 2000},
+    "rating":      {"type": "number",  "ge": 1, "le": 5},
+    "review_count":{"type": "integer", "ge": 0},
+    "in_stock":    {"type": "boolean"},
+    "released_on": {"type": "date"}
+  }
+}

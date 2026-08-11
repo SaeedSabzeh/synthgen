@@ -1,0 +1,6 @@
+# Convenience pin file for Colab / quick installs.
+# Prefer: pip install -e ".[pandas,dev]"
+openai>=1.40
+pydantic>=2.7
+python-dotenv>=1.0
+pandas>=2.0
